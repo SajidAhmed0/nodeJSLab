@@ -3,6 +3,8 @@ console.log("Hello from feature/sajid/readFile");
 const fs = require('fs');
 const http = require('http');
 const https = require('https');
+const myModule = require('./my-module.js');
+console.log(myModule.myFunction());
 
 fs.readFile('file.txt', 'utf8', function (err, data) {
  if (err) throw err;
